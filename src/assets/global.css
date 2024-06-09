@@ -1,0 +1,138 @@
+/* Modal fade animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s forwards;
+}
+
+.animate-fade-out {
+  animation: fade-out 0.5s forwards;
+}
+
+/* Modal */
+.modal-layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+.modal-header p {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 130vh;
+}
+
+/* Form elemets */
+.error-msg {
+  color: red;
+  margin-bottom: 5px;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  border: none;
+  border-radius: 15px;
+  background-color: #282828;
+
+  outline: none;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  border-radius: 15px;
+  background-color: #800080;
+
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: ease 0.3s;
+}
+button:hover[type="submit"] {
+  background-color: #580b57;
+  box-shadow: 0 0 10px #800080;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid #282828;
+  cursor: pointer;
+
+  transition: ease 0.3s;
+}
+input[type="checkbox"]:checked {
+  background-color: #282828;
+}
+
+.checkbox-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+.checkbox-container label {
+  margin-left: 15px;
+  color: #b3b3b3;
+}
